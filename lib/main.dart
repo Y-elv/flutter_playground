@@ -77,10 +77,65 @@ class Home extends StatelessWidget {
 
       // for container widget
 
-      body: Container(
+      // body: Container(
+      //   color:Colors.grey[500] ,
+      //
+      // ),
 
+      // for row
+
+      // body: Row(
+      //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //   crossAxisAlignment: CrossAxisAlignment.start,
+      //   children: <Widget>[
+      //     Text('Hello World!'),
+      //     ElevatedButton(
+      //       onPressed: () {},
+      //       child: Text('Am button'),
+      //       style: ElevatedButton.styleFrom(
+      //         backgroundColor: Colors.amber, // This is the color property you are looking for
+      //       ),
+      //     ),
+      //     Container(
+      //       color: Colors.cyan,
+      //       padding: EdgeInsets.all(30.0),
+      //       child: Text('am Inside'),
+      //     )
+      //   ],
+      //
+      // ),
+
+      // for column
+
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: <Widget>[
+          Row(
+              children: <Widget>[
+              Text("We have to be on column "),
+
+              Container(
+                color: Colors.blue,
+                padding: EdgeInsets.all(10.0),
+                child: Text('am Inside'),
+              ),
+              Container(
+                color: Colors.cyan,
+                padding: EdgeInsets.all(10.0),
+                child: Text('am Inside'),
+              ),
+              Container(
+                color: Colors.amber,
+                padding: EdgeInsets.all(5.0),
+                child: Text('am Inside'),
+              )]
+          )
+
+        ],
 
       ),
+
 
       floatingActionButton: FloatingActionButton(
           onPressed: () {}, // Required, but does nothing
